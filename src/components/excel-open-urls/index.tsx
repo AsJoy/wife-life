@@ -24,7 +24,7 @@ export default () => {
     <div style={{
       padding: '30px'
     }}>
-      请宝贝从excel全选，复制吗，然后粘贴在下面，再点一下下面的打开按钮
+      请宝贝从 excel 全选，复制一下，然后粘贴在下面，再点一下下面的打开按钮
     </div>
     <Input.TextArea
       allowClear
