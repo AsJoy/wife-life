@@ -20,11 +20,15 @@ export default () => {
     })
   }, [value])
   return <div>
-    <h2 className={'wife-title'}>批量打开</h2>
-
+    <h2 className={'wife-title'}>功能1:  批量打开 url</h2>
+    <div style={{
+      padding: '30px'
+    }}>
+      请宝贝从excel全选，复制吗，然后粘贴在下面，再点一下下面的打开按钮
+    </div>
     <Input.TextArea
       allowClear
-      placeholder={'请宝贝从excel全选，复制吗，然后粘贴在这里，再按一下回车 \n ' +
+      placeholder={'请宝贝从excel全选，复制吗，然后粘贴在这里\n ' +
       'exp: http://localhost:3000/#/tool\n' +
       'http://localhost:3000/#/tool\n' +
       'http://localhost:3000/#/tool\n' +
@@ -37,8 +41,7 @@ export default () => {
       value={value}
       onChange={changeHander}></Input.TextArea>
 
-    <Button onClick={doJump}>批量跳转</Button>
-
+    <Button onClick={doJump} type="primary" block>打开</Button>
 
     <p style={{
       padding: '30px'
